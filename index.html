@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+	<div class="slides">
+		<section class="introduction">
+			<section>About myself
+				<p class="fragment">My name is Denis Ivanchenko.</p>
+				<p class="fragment">I am currently working as a QA engineer.
+					<br>
+					<img data-src="https://kata.academy/qa-dev.png" height="200" width="200" alt="qa">
+				</p>
+				<p class="fragment">I have been actively studying front-end development since December 2022.</p>
+			</section>
+			<section>Our today's Topic
+				<p class="fragment">An Introduction to TypeScript
+					<br>
+					<img data-src="https://cdn.thenewstack.io/media/2022/01/10b88c68-typescript-logo.png" alt="ts-logo">
+				</p>
+			</section>
+			<section>Session Plan:
+				<p class="fragment">1. What is TypeScript</p>
+				<p class="fragment">2. Advantages of using TypeScript</p>
+				<p class="fragment">3. How to set up TypeScript in you project</p>
+				<p class="fragment">4. Basic Types</p>
+				<p class="fragment">5. Type Annotations</p>
+				<p class="fragment">6. Functions and Interfaces</p>
+				<p class="fragment">7. Working with Classes</p>
+				<p class="fragment">8. Recap & Resources</p>
+			</section>
+		</section>
+		<section class="what-is-typescript">
+			<section>
+				What is TypeScript?
+			</section>
+			<section>1. TypeScript is a strongly typed programming language that builds on JavaScript
+				<img data-src="https://i.stack.imgur.com/VbJmm.png">
+			</section>
+			<section>2. TypeScript adds additional syntax to JavaScript
+				<img data-src="https://miro.medium.com/v2/resize:fit:1400/1*YkyCsmw3rGNQ6NYH7YpAPQ.png">
+			</section>
+			<section>3. TypeScript code converts to JavaScript, which runs anywhere JavaScript runs: In a browser, on Node.js or Deno and in your apps
+				<img data-src="https://i.ibb.co/XLvsPQh/2023-07-25-14-14-35.png">
+			</section>
+			<section>4. TypeScript understands JavaScript and uses type inference to give you tooling without additional code
+				<img data-src="https://i.ibb.co/NY26Fwt/2023-07-26-10-43-12.png">
+				<img data-src="https://i.ibb.co/sbjhsFS/2023-07-26-10-46-33.png">
+			</section>
+		</section>
+		<section class="ts-advantages">
+			<section>
+				Advantages of TypeScript
+			</section>
+			<section>1. Improved code readability and maintainability
+				<p class="fragment">TypeScript allows developers to define the types of variables, function parameters, and return values explicitly.
+					<img data-src="https://www.eztek.vn/wp-content/uploads/image1-34.png">
+				</p>
+			</section>
+			<section>2. Early detection of errors during development
+				<p class="fragment">TypeScript is statically typed, type checking is performed during development.
+					<img data-src="https://i.ibb.co/hHv3V0T/123.png">
+					<img data-src="https://i.ibb.co/gtyH4Gp/type-error.png">
+				</p>
+			</section>
+			<section>3. Code editor support for better productivity
+				<p class="fragment"> 1. Intelligent Autocompletion: TypeScript's type system allows code editors to provide intelligent autocompletion suggestions as you type</p>
+				<p class="fragment"> 2. TypeScript-aware code editors offer advanced refactoring tools that simplify code restructuring. When you want to rename variables, functions, or classes, the editor can automatically update all occurrences throughout the project. </p>
+				<p class="fragment"> 3. TypeScript enables smooth navigation through large codebases. You can quickly jump to the definition of a symbol or find all references.</p>
+			</section>
+			<section>4. Better collaboration in large projects
+				<p class="fragment"> With TypeScript the code becomes more self-documenting, reducing the need for extensive explanations in the comments.
+					<img data-src="https://i.ibb.co/QHmmDvN/2023-07-26-12-19-06.png">
+				</p>
+			</section>
+		</section>
+		<section class="setting-up-ts">
+			<section> How to set up TypeScript in your project
+				<img class="fragment" data-src="https://i.ibb.co/BN8kY45/2023-07-26-12-34-45.png">
+				<img class="fragment" data-src="https://i.ibb.co/V3YpZZc/2023-07-26-12-34-52.png">
+				<img class="fragment" data-src="https://i.ibb.co/zXYw7mf/2023-07-26-12-35-08.png">
+			</section>
+			<section> How to set up TypeScript in your project
+				<img data-src="https://i.ibb.co/cNdj7XF/2023-07-26-12-35-29.png">
+				<img class="fragment" data-src="https://i.ibb.co/HKP76HK/2023-07-26-12-35-42.png">
+			</section>
+			<section>  Example of tsconfig.json configuration file
+				<img class="fragment" data-src="https://i.ibb.co/DWdw2Yd/2023-07-26-13-08-38.png">
+			</section>
+		</section>
+		<section class="basic-ts-types">
+			<section> Basic data types in TypeScript</section>
+			<section> number
+				<p class="fragment">Numbers in TypeScript work the same way as they do in JavaScript.</p>
+				<img class="fragment" data-src="https://i.ibb.co/YkXZnNF/2023-07-26-13-28-46.png">
+			</section>
+			<section>string
+				<p class="fragment">Strings in TypeScript work the same way as they do in JavaScript.</p>
+				<img class="fragment" data-src="https://i.ibb.co/PNtPqmY/2023-07-26-13-48-21.png">
+			</section>
+			<section>boolean
+				<p class="fragment">Booleans in TypeScript work the same way as they do in JavaScript.</p>
+				<img class="fragment" data-src="https://i.ibb.co/N9nh0k9/2023-07-26-13-46-25.png">
+			</section>
+			<section>null and undefined
+				<p class="fragment">In TypeScript, both undefined and null actually have their types named undefined and null respectively.</p>
+				<img class="fragment" data-src="https://i.ibb.co/VVYpr9k/2023-07-26-13-51-23.png">
+			</section>
+			<section>Inferred Typing in TypeScript
+				<p class="fragment">TypeScript also encourages dynamic typing of variables. TypeScript will find the first usage of the variable within the code, determine the type to which it has been initially set and then assume the same type for this variable in the rest of your code block.</p>
+				<img class="fragment" data-src="https://i.ibb.co/gJn2dNb/2023-07-26-13-54-47.png">
+			</section>
+		</section>
+		<section class="ts-type-annotation">
+			<section>Type Annotations
+				<p>In TypeScript, type annotations allow developers to explicitly specify the types of variables, function parameters, and return values.</p>
+			</section>
+			<section>Variable with Type Annotation
+				<p class="fragment">This helps catch potential type-related errors early in the development process, leading to more reliable and robust code.</p>
+				<img class="fragment" data-src="https://i.ibb.co/wyTYYM1/2023-07-27-09-57-54.png">
+			</section>
+			<section>Function Parameter with Type Annotation
+				<img class="fragment" data-src="https://i.ibb.co/Jc1fx9C/2023-07-27-10-03-35.png">
+				<p class="fragment">Function with Return Type Annotation
+					<img data-src="https://i.ibb.co/nwnVr06/2023-07-27-10-08-59.png">
+				</p>
+			</section>
+			<section>Type annotations offer a clear and concise way to communicate the intended data types within our codebase. They act as documentation and make it easier for other developers to understand the purpose of variables and functions, even if they haven't written the code themselves. </section>
+		</section>
+		<section class="functions-interfaces">
+			<section>TypeScript Functions
+				<p>In TypeScript, functions can be defined with explicit type annotations for parameters and return values.</p>
+				<p class="fragment">Function with Type Annotations
+					<img data-src="https://i.ibb.co/VxJK0nc/2023-07-27-10-33-35.png">
+				</p>
+			</section>
+			<section>TypeScript Interfaces
+				<p>In TypeScript, an interface is an abstract type that tells the compiler which property names a given object can have. TypeScript creates implicit interfaces when you define an object with properties. It starts by looking at the object’s property name and data type using TypeScript’s type inference abilities.</p>
+			</section>
+			<section>
+				<img data-src="https://i.ibb.co/McJt9KG/2023-07-27-10-41-13.png" width="600" height="650">
+			</section>
+			<section>Conclusion
+				<p class="fragment">TypeScript's combination of function type annotations and interfaces helps catch type-related errors early in the development process, reducing bugs and making the code more maintainable. It also encourages code consistency and readability, making it easier for developers to understand and work with each other's code in larger projects.</p>
+			</section>
+		</section>
+		<section class="ts-classes">
+			<section>
+				Classes are a common abstraction used in object-oriented programming (OOP) languages to describe data structures known as objects.
+			</section>
+			<section>
+				<p>Class syntax</p>
+				<img class="fragment" data-src="https://i.ibb.co/Q9hKRB9/2023-07-27-11-28-33.png">
+			</section>
+			<section> Inheritance
+				<p>One of the most fundamental patterns in class-based programming is being able to extend existing classes to create new ones using inheritance.</p>
+				<img class="fragment" data-src="https://i.ibb.co/cLxtHdr/2023-07-27-11-32-45.png" width="500" height=400">
+			</section>
+			<section> Public, private, and protected modifiers
+				<img class="fragment" data-src="https://i.ibb.co/56BZ3K9/2023-07-27-11-36-06.png">
+			</section>
+			<section> Advantages of using classes in TypeScript
+				<p class="fragment">1. Encapsulation</p>
+				<p class="fragment">2. Inheritance</p>
+				<p class="fragment">3. Polymorphism</p>
+				<p class="fragment">4. Constructor Function</p>
+				<p class="fragment">5. Readability and Maintainability</p>
+			</section>
+		</section>
+		<section class="resources">
+			<section>Recap & Resources</section>
+			<section>TypeScript Overview
+				<p class="fragment">TypeScript is a statically-typed superset of JavaScript that adds optional static typing and advanced features to the language. It compiles to plain JavaScript and can be used in any JavaScript project.</p>
+			</section>
+			<section>Resources for Further Learning:
+				<p class="fragment">https://www.typescriptlang.org/docs/</p>
+				<p class="fragment">https://www.typescriptlang.org/play/</p>
+				<p class="fragment">https://www.freecodecamp.org/news/learn-typescript-beginners-guide/</p>
+			</section>
+		</section>
+	</div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    Reveal.initialize({
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+    });
+</script>
+</body>
+</html>
